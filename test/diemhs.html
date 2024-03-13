@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher's Weekly Schedule</title>
+<link rel="stylesheet" href="dkihoc.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<header class="sticky-header">
+    <nav class="navbar">
+      <a href="/" class="logo">Japanese</a>
+      <div class="nav-links">
+        <a href="/about">About Us</a>
+        <a href="/services">Services</a>
+        <a href="/contact">Contact</a>
+        <a href="/login" class="login-link">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="sidebar-sticky vh-100">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" data-toggle="collapse" data-target="#registerSubMenu" aria-expanded="false" aria-controls="registerSubMenu">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#" data-toggle="collapse" data-target="#registerSubMenu" aria-expanded="false" aria-controls="registerSubMenu">Đăng ký học</a>
+                <div class="collapse" id="registerSubMenu">
+                  <ul class="nav flex-column ml-3">
+                    <li class="nav-item"><a class="nav-link" href="#">Lớp Học A</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Lớp Học B</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Lớp Học C</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#profileSubMenu" aria-expanded="false" aria-controls="profileSubMenu">Thông tin cá nhân</a>
+                <div class="collapse" id="profileSubMenu">
+                  <ul class="nav flex-column ml-3">
+                    <li class="nav-item"><a class="nav-link" href="#">Cập nhật Hồ Sơ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Chỉnh Sửa Thông Tin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Đổi Mật Khẩu</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9">
+            <div class="container mt-5">
+                <div class="container mt-5">
+                    <div class="row mb-4">
+                        <div class="col">
+                            <h2 class="text-center">Bảng Điểm Học Sinh</h2>
+                            <h3>Tên học sinh: Nguyễn Văn A</h3>
+                        </div>
+                    </div>
+                
+                    <table class="table table-bordered">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Điểm danh</th>
+                                <th scope="col">Điểm kiểm tra thường xuyên</th>
+                                <th scope="col">Kiểm tra giữa khóa</th>
+                                <th scope="col">Kiểm tra cuối khóa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>15/15</td>
+                                <td>8.5</td>
+                                <td>7.0</td>
+                                <td>8.0</td>
+                            </tr>
+                            <!-- Bạn có thể thêm nhiều hàng hơn tại đây với thông tin tương tự -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>    
+      </div>
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </body>
+</html>

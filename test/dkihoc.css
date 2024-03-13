@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  .legend {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .category {
+    padding: 5px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+  }
+  .schedule {
+    display: flex;
+    justify-content: space-around;
+  }
+  .schedule-day {
+    width: 13%;
+  }
+  .schedule-day h3 {
+    background: #eee;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 5px;
+  }
+  .time-block {
+    margin: 10px 0;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Header Styles */
+  .sticky-header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000; /* Make sure it stays on top */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: add shadow for more depth */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .nav-links a {
+    margin-left: 20px;
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  /* Login Link Styles */
+  .login-link {
+    background-color: #4CAF50; /* Green Background */
+    color: white; /* White text */
+    padding: 8px 15px;
+    border-radius: 5px;
+  }
+  
+  /* Main content styling */
+  main {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide navigation links on small screens */
+    }
+  }
+  
+  .card {
+    border-radius: 15px; /* Làm tròn góc các thẻ */
+    overflow: hidden; /* Đảm bảo nội dung không tràn ra khỏi thẻ */
+    background-color: #f9f9f9; /* Màu nền cho card */
+    transition: all 0.3s; /* Tạo hiệu ứng chuyển đổi mượt mà */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Khi di chuột vào, thẻ sẽ nhô lên */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Tạo bóng để thẻ nổi bật */
+  }
+  
+  .card-img-top {
+    height: 180px; /* Cố định chiều cao cho ảnh */
+    object-fit: cover; /* Đảm bảo ảnh phủ đều không bị méo */
+    border-top-left-radius: 15px; /* Làm tròn góc trên cùng bên trái của ảnh */
+    border-top-right-radius: 15px; /* Làm tròn góc trên cùng bên phải của ảnh */
+  }
+  
+  /* Tùy chọn thêm nếu muốn có ảnh nền chung cho tất cả card */
+  
+  .card {
+    background-image: url('path-to-your-image.jpg'); /* Thêm ảnh nền cho thẻ */
+    background-size: cover; /* Đảm bảo ảnh nền phủ kín */
+    background-position: center; /* Căn ảnh nền vào giữa */
+    
+  }
+  
+  
+  .sticky-header {
+    position: fixed; /* Đảm bảo header luôn cố định ở trên cùng của trang */
+    top: 0;
+    width: 100%;
+    background: #fff; /* hoặc một mã màu nền nào đó */
+    z-index: 1000; /* Đảm bảo header không bị nội dung khác che mờ */
+  }
+  
+  header.navbar {
+    padding: 10px 0; /* Thêm padding cho navbar */
+  }
+  
+  .nav-links a {
+    margin-right: 15px; /* Tạo khoảng cách giữa các link */
+    color: #333; /* Đặt màu cho link */
+    transition: all 0.3s; /* Tạo hiệu ứng chuyển đổi mượt mà */
+  }
+  
+  .nav-links a:hover {
+    color: #007bff; /* Thay đổi màu khi hover */
+  }
+  
+  .login-link {
+    background: #007bff; /* Nền cho link login */
+    color: #fff; /* Màu chữ cho link login */
+    padding: 5px 10px; /* Padding cho link login */
+    border-radius: 5px; /* Làm tròn đường viền link login */
+  }
+  
+  .login-link:hover {
+    background: #0056b3; /* Thay đổi màu nền khi hover */
+    color: #fff; /* Đảm bảo màu chữ không đổi khi hover */
+  }
+  
+  body {
+    padding-top: 70px; /* Thêm padding ở đầu trang để không bị che mất bởi header */
+  }
+  
+  /* Cuối cùng, nếu bạn muốn một background chung cho toàn trang */
+  
+  body {
+    background-image: url('path-to-your-background-image.jpg'); /* Ảnh nền cho toàn trang */
+    background-size: cover;
+    background-attachment: fixed; /* Ảnh nền không cuộn cùng trang */
+  }
+  
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .sidebar-sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0; 
+    height: calc(100vh - 48px); /* Full height */
+    padding-top: 20px;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: auto; /* Enable vertical scroll */
+    background-color: #f5f5f5; /* Sidebar background color */
+    box-shadow: 2px 0 5px 0 rgba(0,0,0,0.1);
+  }
+  
+  .nav-link {
+    margin: 10px 15px;
+    border-radius: 4px;
+    color: #333;
+    transition: all 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: #007bff; /* Highlight on hover */
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-link.active {
+    background-color: #0069d9; /* Active state */
+    color: white;
+  }
+  
+  /* Styling for rest of the page content */
+  .content {
+    padding: 20px;
+  }
+  
+  /* Responsive layout - make the sidebar full width on screens less than 768px wide */
+  @media (max-width: 768px) {
+    .sidebar-sticky {
+      position: relative;
+      height: auto;
+      padding: 10px;
+    }
+  }
+
+  .text-vnd { font-size: 1.2rem; font-weight: bold; }
+  .section-padding { padding: 15px; }

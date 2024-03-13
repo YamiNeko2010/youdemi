@@ -1,0 +1,16 @@
+#calendar {
+    max-width: 900px;
+    margin: 40px auto;
+  }
+  
+  .fc-toolbar fc-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .fc-event, .fc-event-dot {
+    background-color: #009688;
+    color: #fff;
+  }
+  

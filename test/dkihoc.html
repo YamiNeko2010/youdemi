@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher's Weekly Schedule</title>
+<link rel="stylesheet" href="dkihoc.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<header class="sticky-header">
+    <nav class="navbar">
+      <a href="/" class="logo">Japanese</a>
+      <div class="nav-links">
+        <a href="/about">About Us</a>
+        <a href="/services">Services</a>
+        <a href="/contact">Contact</a>
+        <a href="/login" class="login-link">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="sidebar-sticky vh-100">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" data-toggle="collapse" data-target="#registerSubMenu" aria-expanded="false" aria-controls="registerSubMenu">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#" data-toggle="collapse" data-target="#registerSubMenu" aria-expanded="false" aria-controls="registerSubMenu">Đăng ký học</a>
+                <div class="collapse" id="registerSubMenu">
+                  <ul class="nav flex-column ml-3">
+                    <li class="nav-item"><a class="nav-link" href="#">Lớp Học A</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Lớp Học B</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Lớp Học C</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#profileSubMenu" aria-expanded="false" aria-controls="profileSubMenu">Thông tin cá nhân</a>
+                <div class="collapse" id="profileSubMenu">
+                  <ul class="nav flex-column ml-3">
+                    <li class="nav-item"><a class="nav-link" href="#">Cập nhật Hồ Sơ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Chỉnh Sửa Thông Tin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Đổi Mật Khẩu</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-lg">
+                <img src="/readme-images/images.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tên lớp học</h5>
+                  <p class="card-text">Thông tin số lượng học sinh còn trống.</p>
+                  <p class="card-text"><small class="text-muted">Thời gian: ...</small></p>
+                  <p class="card-text">Giáo viên: ...</p>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#confirmModal">Đăng ký</a>
+                </div>
+              </div>
+            </div>
+            <!-- Thẻ 2 --> 
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-lg">
+                <img src="/readme-images/images.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tên lớp học</h5>
+                  <p class="card-text">Thông tin số lượng học sinh còn trống.</p>
+                  <p class="card-text"><small class="text-muted">Thời gian: ...</small></p>
+                  <p class="card-text">Giáo viên: ...</p>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#confirmModal">Đăng ký</a>
+                </div>
+              </div>
+            </div>
+            <!-- Thẻ 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-lg">
+                <img src="/readme-images/images.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tên lớp học</h5>
+                  <p class="card-text">Thông tin số lượng học sinh còn trống.</p>
+                  <p class="card-text"><small class="text-muted">Thời gian: ...</small></p>
+                  <p class="card-text">Giáo viên: ...</p>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#confirmModal">Đăng ký</a>
+                </div>
+              </div>
+            </div>
+            <!-- Tiếp tục thêm thẻ nếu cần -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-lg">
+                <img src="/readme-images/images.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tên lớp học</h5>
+                  <p class="card-text">Thông tin số lượng học sinh còn trống.</p>
+                  <p class="card-text"><small class="text-muted">Thời gian: ...</small></p>
+                  <p class="card-text">Giáo viên: ...</p>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#confirmModal">Đăng ký</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        <!-- Thẻ 1 -->
+        
+      </div>
+    </div>
+
+    <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">Xác nhận đăng ký</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Bạn có chắc chắn muốn đăng ký lớp học này không?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Không</button>
+            <button type="button" class="btn btn-primary">Có</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </body>
+</html>

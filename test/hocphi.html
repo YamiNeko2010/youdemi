@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher's Weekly Schedule</title>
+<link rel="stylesheet" href="dkihoc.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<header class="sticky-header">
+    <nav class="navbar">
+      <a href="/" class="logo">Japanese</a>
+      <div class="nav-links">
+        <a href="/about">About Us</a>
+        <a href="/services">Services</a>
+        <a href="/contact">Contact</a>
+        <a href="/login" class="login-link">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="sidebar-sticky vh-100">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" data-toggle="collapse" data-target="#registerSubMenu" aria-expanded="false" aria-controls="registerSubMenu">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#" data-toggle="collapse" data-target="#registerSubMenu" aria-expanded="false" aria-controls="registerSubMenu">Đăng ký học</a>
+                <div class="collapse" id="registerSubMenu">
+                  <ul class="nav flex-column ml-3">
+                    <li class="nav-item"><a class="nav-link" href="#">Lớp Học A</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Lớp Học B</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Lớp Học C</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#profileSubMenu" aria-expanded="false" aria-controls="profileSubMenu">Thông tin cá nhân</a>
+                <div class="collapse" id="profileSubMenu">
+                  <ul class="nav flex-column ml-3">
+                    <li class="nav-item"><a class="nav-link" href="#">Cập nhật Hồ Sơ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Chỉnh Sửa Thông Tin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Đổi Mật Khẩu</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9">
+            <!-- Phần trên: Thông tin cá nhân và hướng dẫn -->
+  <div class="container section-padding">
+    <div class="row">
+      <div class="col-12 col-md-8 mb-3">
+        <h2 class="mb-3">Thông Tin Học Phí Sinh Viên</h2>
+        <input type="text" class="form-control mb-3" placeholder="Tên sinh viên">
+        <input type="text" class="form-control" placeholder="Số điện thoại">
+      </div>
+      <div class="col-12 col-md-4 d-flex align-items-end">
+        <button class="btn btn-primary mb-3" onclick="window.location='https://duongsu.com/huongdan';">
+          Hướng Dẫn
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Phần dưới: Chi tiết học phí -->
+  <div class="container section-padding">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Chi Tiết Học Phí</h5>
+        <div class="row">
+          <div class="col-sm-4 mb-3">
+            <h6>Học phí đã nộp</h6>
+            <p class="text-vnd">2,500,000 VND</p>
+          </div>
+          <div class="col-sm-4 mb-3">
+            <h6>Học phí phải nộp</h6>
+            <p class="text-vnd">1,500,000 VND</p>
+          </div>
+          <div class="col-sm-4 mb-3">
+            <h6>Danh sách đã nộp</h6>
+            <ul class="list-group">
+              <li class="list-group-item">Ngày 01/01/2024 - 500,000 VND</li>
+              <li class="list-group-item">Ngày 01/02/2024 - 500,000 VND</li>
+              <li class="list-group-item">Ngày 01/03/2024 - 500,000 VND</li>
+              <li class="list-group-item">Ngày 01/04/2024 - 500,000 VND</li>
+              <li class="list-group-item">Ngày 01/05/2024 - 500,000 VND</li>
+              <!-- Thêm các khoản đã nộp khác vào đây -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+        
+        <!-- Thẻ 1 -->
+        
+      </div>
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
