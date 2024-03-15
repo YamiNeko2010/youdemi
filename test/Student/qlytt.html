@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher's Weekly Schedule</title>
+<link rel="stylesheet" href="./css/dkihoc.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<header class="sticky-header">
+    <nav class="navbar">
+      <a href="/" class="logo">Japanese</a>
+      <div class="nav-links">
+        <a href="/about">About Us</a>
+        <a href="/services">Services</a>
+        <a href="/contact">Contact</a>
+        <a href="/login" class="login-link">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="sidebar-sticky vh-100">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" data-toggle="collapse" data-target="#registerSubMenu" aria-expanded="false" aria-controls="registerSubMenu">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#" data-toggle="collapse" data-target="#registerSubMenu" aria-expanded="false" aria-controls="registerSubMenu">Học sinh</a>
+                <div class="collapse" id="registerSubMenu">
+                  <ul class="nav flex-column ml-3">
+                    <li class="nav-item"><a class="nav-link" href="#">Quản lý thông tin cá nhân</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dkihoc.html">Đăng ký học</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hocphi.html">Học phí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tkb.html">Thời khóa biểu </a></li>
+                    <li class="nav-item"><a class="nav-link" href="diemhs.html">Bảng điểm</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#profileSubMenu" aria-expanded="false" aria-controls="profileSubMenu">Thông tin cá nhân</a>
+                <div class="collapse" id="profileSubMenu">
+                  <ul class="nav flex-column ml-3">
+                    <li class="nav-item"><a class="nav-link" href="#">Cập nhật Hồ Sơ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Chỉnh Sửa Thông Tin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Đổi Mật Khẩu</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9 qlytt">
+            <div class="container mt-5">
+                <h2 class="text-center">Quản lý thông tin cá nhân</h2>
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="fullName">Họ tên:</label>
+                      <input type="text" class="form-control" id="fullName" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="birthday">Ngày sinh:</label>
+                      <input type="date" class="form-control" id="birthday" required>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="phone">Số điện thoại:</label>
+                      <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="email">Email:</label>
+                      <input type="email" class="form-control" id="email" required>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="address">Địa chỉ:</label>
+                      <input type="text" class="form-control" id="address" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label for="city">Tỉnh/Thành phố:</label>
+                      <input type="text" class="form-control" id="city" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label for="district">Quận/Huyện:</label>
+                      <input type="text" class="form-control" id="district" required>
+                    </div>
+                  </div>
+                  
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="gender">Giới tính:</label>
+                      <select class="form-control" id="gender" required>
+                        <option value="male">Nam</option>
+                        <option value="female">Nữ</option>
+                        <option value="other">Khác</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-primary">Lưu Thông Tin</button>
+                </form>
+              </div>
+        </div>
+       
+      </div>
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </body>
+</html>

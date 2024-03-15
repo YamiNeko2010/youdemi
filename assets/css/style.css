@@ -1,18 +1,3 @@
-/*-----------------------------------*\
-  #main.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
@@ -286,41 +271,6 @@ body.nav-active { overflow: hidden; }
 
 
 
-/*-----------------------------------*\
-  #PRELOADER
-\*-----------------------------------*/
-
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--light-coral);
-  display: grid;
-  place-items: center;
-  z-index: 6;
-  transition: var(--transition);
-}
-
-.preloader.loaded {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.preloader .circle {
-  width: 50px;
-  height: 50px;
-  border-radius: var(--radius-circle);
-  border: 4px solid var(--white);
-  border-block-start-color: transparent;
-  animation: rotate360 1s ease infinite;
-}
-
-@keyframes rotate360 {
-  0% { transform: rotate(0); }
-  100% { transform: rotate(1turn); }
-}
 
 
 
@@ -449,24 +399,6 @@ body.nav-active { overflow: hidden; }
 
 
 
-/*-----------------------------------*\
-  #CATEGORY
-\*-----------------------------------*/
-
-.category .grid-list { padding-block: 40px 52px; }
-
-.category-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  border-inline-start: 4px solid transparent;
-}
-
-.category-card:is(:hover, :focus-within) { border-color: var(--light-coral); }
-
-.category-card .title-sm { margin-block-start: 4px; }
-
-.category .btn { margin-inline: auto; }
 
 
 
@@ -920,4 +852,19 @@ body.nav-active { overflow: hidden; }
 
   .footer .container { gap: 48px; }
 
+}
+
+/* Thêm CSS vào file style của bạn */
+
+.logo span {
+  font-family: 'Arial', sans-serif; /* Chọn font-family phù hợp */
+  font-size: 24px; /* Đặt kích thước phù hợp */
+  font-weight: bold; /* Chữ đậm */
+  color: #000; /* Màu chữ, thay đổi theo ý muốn */
+  text-decoration: none; /* Không gạch chân để giống như một link */
+  display: inline-block; /* Giúp có thể áp dụng padding và margin */
+  padding: 8px 20px; /* Thêm padding nếu cần, điều chỉnh theo ý muốn */
+  margin: 0; /* Đặt margin nếu cần */
+  vertical-align: middle; /* Đảm bảo nó căn giữa theo chiều dọc so với các phần tử xung quanh */
+  /* Thêm các thuộc tính khác nếu bạn muốn */
 }

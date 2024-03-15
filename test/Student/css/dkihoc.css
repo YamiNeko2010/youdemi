@@ -1,4 +1,4 @@
-body {
+ body {
     font-family: Arial, sans-serif;
   }
   .legend {
@@ -217,5 +217,19 @@ body {
     }
   }
 
-  .text-vnd { font-size: 1.2rem; font-weight: bold; }
-  .section-padding { padding: 15px; }
+  body .qlytt {
+    background-color: #f8f9fa;
+  }
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  .form-row > .col, .form-row > [class*="col-"] {
+    padding-left: 8px; /* Giảm khoảng cách giữa các ô */
+    padding-right: 8px; /* Giảm khoảng cách giữa các ô */
+  }
