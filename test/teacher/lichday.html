@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher's Weekly Schedule</title>
+<link rel="stylesheet" href="../Student/css/dkihoc.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<header class="sticky-header">
+    <nav class="navbar">
+      <a href="/" class="logo">Japanese</a>
+      <div class="nav-links">
+        <a href="/about">About Us</a>
+        <a href="/services">Services</a>
+        <a href="/contact">Contact</a>
+        <a href="/login" class="login-link">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="sidebar-sticky vh-100">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" data-toggle="collapse" data-target="#registerSubMenu" aria-expanded="false" aria-controls="registerSubMenu">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#" data-toggle="collapse" data-target="#registerSubMenu" aria-expanded="false" aria-controls="registerSubMenu">Học sinh</a>
+                <div class="collapse" id="registerSubMenu">
+                  <ul class="nav flex-column ml-3">
+                    <li class="nav-item"><a class="nav-link" href="#">Quản lý thông tin cá nhân</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dkihoc.html">Đăng ký học</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hocphi.html">Học phí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tkb.html">Thời khóa biểu </a></li>
+                    <li class="nav-item"><a class="nav-link" href="diemhs.html">Bảng điểm</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#profileSubMenu" aria-expanded="false" aria-controls="profileSubMenu">Giáo viên</a>
+                <div class="collapse" id="profileSubMenu">
+                  <ul class="nav flex-column ml-3">
+                    <li class="nav-item"><a class="nav-link" href="lichday.html">Lịch dạy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Chỉnh Sửa Thông Tin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Đổi Mật Khẩu</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9 diemhs">
+            <h2 class="text-center mb-4">Các Lớp Học</h2>
+            <div class="row">
+              <!-- Lặp lại block này cho mỗi lớp học -->
+              <div class="col-md-4">
+                <div class="card class-card" onclick="window.location.href='danhsachhs.html';">
+                  <div class="card-body">
+                    <h5 class="card-title">Lớp 10A1</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Thứ Hai, 08:00 - 10:00</h6>
+                    <!-- Thêm thông tin nếu cần -->
+                  </div>
+                </div>
+              </div>
+              <!-- Lớp học khác -->
+              <div class="col-md-4">
+                <div class="card class-card" onclick="window.location.href='student-list.html';">
+                  <!-- Thẻ card-body tương tự như trên -->
+                </div>
+              </div>
+              <!-- Lớp học khác -->
+              <div class="col-md-4">
+                <div class="card class-card" onclick="window.location.href='student-list.html';">
+                  <!-- Thẻ card-body tương tự như trên -->
+                </div>
+              </div>
+              <!-- Kết thúc hàng, bắt đầu hàng mới nếu có nhiều hơn 3 lớp học -->
+            </div>
+        </div>
+       
+      </div>
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </body>
+</html>

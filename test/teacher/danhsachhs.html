@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher's Weekly Schedule</title>
+<link rel="stylesheet" href="../Student/css/dkihoc.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<header class="sticky-header">
+    <nav class="navbar">
+      <a href="/" class="logo">Japanese</a>
+      <div class="nav-links">
+        <a href="/about">About Us</a>
+        <a href="/services">Services</a>
+        <a href="/contact">Contact</a>
+        <a href="/login" class="login-link">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="sidebar-sticky vh-100">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" data-toggle="collapse" data-target="#registerSubMenu" aria-expanded="false" aria-controls="registerSubMenu">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#" data-toggle="collapse" data-target="#registerSubMenu" aria-expanded="false" aria-controls="registerSubMenu">Học sinh</a>
+                <div class="collapse" id="registerSubMenu">
+                  <ul class="nav flex-column ml-3">
+                    <li class="nav-item"><a class="nav-link" href="#">Quản lý thông tin cá nhân</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dkihoc.html">Đăng ký học</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hocphi.html">Học phí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tkb.html">Thời khóa biểu </a></li>
+                    <li class="nav-item"><a class="nav-link" href="diemhs.html">Bảng điểm</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#profileSubMenu" aria-expanded="false" aria-controls="profileSubMenu">Giáo viên</a>
+                <div class="collapse" id="profileSubMenu">
+                  <ul class="nav flex-column ml-3">
+                    <li class="nav-item"><a class="nav-link" href="lichday.html">Lịch dạy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Chỉnh Sửa Thông Tin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Đổi Mật Khẩu</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9 diemhs">
+            <h2 class="text-center mb-4">Quản Lý Sinh Viên Lớp 10A1</h2>
+  <button class="btn btn-success mb-3" onclick="addStudent()">Thêm Sinh Viên Mới</button>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>Tên Học Sinh</th>
+          <th>Điểm Miệng</th>
+          <th>Điểm 15 Phút</th>
+          <th>Điểm 1 Tiết</th>
+          <th>Điểm Cuối Kỳ</th>
+          <th>Hành Động</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Mẫu dữ liệu sinh viên -->
+        <!-- Lặp lại đoạn sau cho mỗi sinh viên -->
+        <tr>
+          <td>Nguyễn Văn A</td>
+          <td>8.5</td>
+          <td>7.0</td>
+          <td>8.0</td>
+          <td>9.0</td>
+          <td class="action-buttons">
+            <button class="btn btn-primary" onclick="editStudent('Nguyễn Văn A')">Sửa</button>
+            <button class="btn btn-danger" onclick="deleteStudent('Nguyễn Văn A')">Xóa</button>
+          </td>
+        </tr>
+        <!-- Kết thúc mẩu dữ liệu sinh viên -->
+      </tbody>
+    </table>
+  </div>
+        </div>
+       
+      </div>
+    </div>
+
+    <script>
+        function addStudent() {
+            // Mở modal hoặc form để nhập thông tin sinh viên mới
+        }
+
+        function editStudent(studentName) {
+        // Mở modal hoặc form để sửa thông tin và điểm của sinh viên có tên là studentName
+        }
+
+        function deleteStudent(studentName) {
+        // Xác nhận và xóa sinh viên có tên là studentName
+        }
+    </script>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -233,3 +233,23 @@
     padding-left: 8px; /* Giảm khoảng cách giữa các ô */
     padding-right: 8px; /* Giảm khoảng cách giữa các ô */
   }
+
+  body .diemhs {
+    .class-card {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .class-card:hover {
+      transform: scale(1.05);
+    }
+    /* Thêm màu sắc và padding cho card */
+    .card-body {
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+    .container {
+      margin-top: 20px;
+  }
+  } 
