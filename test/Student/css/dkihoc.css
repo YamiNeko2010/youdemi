@@ -253,3 +253,36 @@
       margin-top: 20px;
   }
   } 
+
+  .dki1 {
+    .page-content {
+      padding: 40px 0;
+  }
+
+  .class-card {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin: 0 0 30px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .class-card .card-body {
+      padding: 20px;
+  }
+
+  .class-card .card-title {
+      margin: 0;
+  }
+
+  .view-grades-btn {
+      color: #fff;
+      background-color: #007bff;
+      border-color: #007bff;
+  }
+
+  .view-grades-btn:hover {
+      color: #fff;
+      background-color: #0056b3;
+      border-color: #004085;
+  }
+  }
