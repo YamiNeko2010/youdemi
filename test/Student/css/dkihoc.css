@@ -286,3 +286,27 @@
       border-color: #004085;
   }
   }
+
+  .lopday {
+    .page-content {
+      padding: 40px 0;
+  }
+  
+  .course-card {
+      margin-bottom: 30px;
+  }
+
+  }
+
+  .qmk {
+    .password-change-container {
+      max-width: 300px;
+            margin: 30px auto;
+            padding: 15px;
+      
+  }
+
+  .form-label {
+      margin-top: 10px;
+  }
+  }

@@ -46,31 +46,33 @@
           </div>
         </div>
         <div class="col-md-9 diemhs">
-            <h2 class="text-center mb-4">Các Lớp Học</h2>
-            <div class="row">
-              <!-- Lặp lại block này cho mỗi lớp học -->
-              <div class="col-md-4">
-                <div class="card class-card" onclick="window.location.href='danhsachhs.html';">
-                  <div class="card-body">
-                    <h5 class="card-title">Lớp 10A1</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Thứ Hai, 08:00 - 10:00</h6>
-                    <!-- Thêm thông tin nếu cần -->
-                  </div>
+            <div class="container page-content lopday">
+                <h2 class="text-center mb-4">Lớp Học Của Giáo Viên</h2>
+                <div class="row">
+                    <!-- Thông tin lớp học 1 -->
+                    <div class="col-md-6">
+                        <div class="card course-card">
+                            <div class="card-body">
+                                <h5 class="card-title course-name">Lớp Tiếng Nhật Giao Tiếp</h5>
+                                <p class="card-text course-info">Thứ dạy: Thứ Tư , Thứ Bảy</p>
+                                <p class="card-text course-info">Số lượng học sinh: 25</p>
+                                <a href="danhsachhs.html" class="btn btn-primary course-btn">Xem Danh Sách</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Thông tin lớp học 2 -->
+                    <div class="col-md-6">
+                        <div class="card course-card">
+                            <div class="card-body">
+                                <h5 class="card-title course-name">Lớp Tiếng Nhật Nâng Cao</h5>
+                                <p class="card-text course-info">Thứ dạy: Thứ Hai , Thứ tư</p>
+                                <p class="card-text course-info">Số lượng học sinh: 30</p>
+                                <a href="danhsachhs.html" class="btn btn-primary course-btn">Xem Danh Sách</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tiếp theo có thể thêm các lớp học khác theo cùng định dạng -->
                 </div>
-              </div>
-              <!-- Lớp học khác -->
-              <div class="col-md-4">
-                <div class="card class-card" onclick="window.location.href='student-list.html';">
-                  <!-- Thẻ card-body tương tự như trên -->
-                </div>
-              </div>
-              <!-- Lớp học khác -->
-              <div class="col-md-4">
-                <div class="card class-card" onclick="window.location.href='student-list.html';">
-                  <!-- Thẻ card-body tương tự như trên -->
-                </div>
-              </div>
-              <!-- Kết thúc hàng, bắt đầu hàng mới nếu có nhiều hơn 3 lớp học -->
             </div>
         </div>
        

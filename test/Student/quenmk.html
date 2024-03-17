@@ -46,32 +46,24 @@
           </div>
         </div>
         <div class="col-md-9 diemhs">
-            <h2 class="text-center mb-4">Các Lớp Học</h2>
-            <div class="row">
-              <!-- Lặp lại block này cho mỗi lớp học -->
-              <div class="col-md-4">
-                <div class="card class-card" onclick="window.location.href='danhsachhs.html';">
-                  <div class="card-body">
-                    <h5 class="card-title">Lớp 10A1</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Thứ Hai, 08:00 - 10:00</h6>
-                    <!-- Thêm thông tin nếu cần -->
-                  </div>
+          <div class="password-change-container border rounded qmk">
+            <h2 class="text-center">Đổi Mật Khẩu</h2>
+            <form id="passwordChangeForm">
+                <div class="form-group">
+                    <label for="oldPassword" class="form-label">Mật Khẩu Cũ:</label>
+                    <input type="password" class="form-control" id="oldPassword" required>
                 </div>
-              </div>
-              <!-- Lớp học khác -->
-              <div class="col-md-4">
-                <div class="card class-card" onclick="window.location.href='student-list.html';">
-                  <!-- Thẻ card-body tương tự như trên -->
+                <div class="form-group">
+                    <label for="newPassword" class="form-label">Mật Khẩu Mới:</label>
+                    <input type="password" class="form-control" id="newPassword" required>
                 </div>
-              </div>
-              <!-- Lớp học khác -->
-              <div class="col-md-4">
-                <div class="card class-card" onclick="window.location.href='student-list.html';">
-                  <!-- Thẻ card-body tương tự như trên -->
+                <div class="form-group">
+                    <label for="confirmNewPassword" class="form-label">Xác Nhận Mật Khẩu Mới:</label>
+                    <input type="password" class="form-control" id="confirmNewPassword" required>
                 </div>
-              </div>
-              <!-- Kết thúc hàng, bắt đầu hàng mới nếu có nhiều hơn 3 lớp học -->
-            </div>
+                <button type="submit" class="btn btn-primary btn-block">Đổi Mật Khẩu</button>
+            </form>
+        </div>
         </div>
        
       </div>
@@ -82,5 +74,26 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          $("#passwordChangeForm").on('submit', function(e) {
+              e.preventDefault();
+              // Validate and change password logic here...
+              var oldPassword = $("#oldPassword").val();
+              var newPassword = $("#newPassword").val();
+              var confirmNewPassword = $("#confirmNewPassword").val();
+  
+              // Basic validation example
+              if (newPassword !== confirmNewPassword) {
+                  alert("Mật khẩu mới và mật khẩu xác nhận không khớp. Vui lòng thử lại.");
+                  return;
+              }
+              // Further processing...
+              alert("Mật khẩu đã được thay đổi thành công!");
+              // Reset form
+              this.reset();
+          });
+      });
+  </script>
     </body>
 </html>
